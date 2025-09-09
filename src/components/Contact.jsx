@@ -13,7 +13,7 @@ export default function Contact() {
         <li>Location: Malolos City, Bulacan</li>
       </ul>
 
-      <p className="small">Available for OJT starting January 2026.</p>
+      <p className="small">Available for OJT starting January 2026. </p>
     </section>
   );
 }

@@ -34,7 +34,7 @@ export default function Projects() {
           </div>
         ))}
       </div>
-      <p className="small">More details available on request.</p>
+      <p className="small">More details available upon request.</p>
     </section>
   );
 }

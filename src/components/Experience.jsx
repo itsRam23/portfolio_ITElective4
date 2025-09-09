@@ -30,7 +30,7 @@ export default function Experience() {
           <p className="muted">Querying sample datasets</p>
           <p>
             Used SELECT, JOIN, GROUP BY and filters to extract insights from
-            prepared datasets.
+            prepared datasets. 
           </p>
         </article>
 
@@ -38,8 +38,8 @@ export default function Experience() {
           <h4>Research Team Lead</h4>
           <p className="muted">Team coordination & reporting</p>
           <p>
-            Led a research team — organized tasks, compiled results, and
-            presented findings.
+            Led a research team - organized tasks, compiled results, and
+            presented findings. 
           </p>
         </article>
       </div>

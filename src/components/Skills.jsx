@@ -28,7 +28,7 @@ export default function Skills() {
         <div className="skill-group">
           <h4>Soft Skills</h4>
           <ul>
-            <li>Analytical mindset • Fast learner • Teamwork • Time management</li>
+            <li>Analytical mindset • Fast learner • Teamwork • Time management </li>
           </ul>
         </div>
       </div>

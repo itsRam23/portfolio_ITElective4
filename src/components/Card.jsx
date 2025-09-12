@@ -1,12 +1,20 @@
 import React from "react";
 
-export default function Card({ title, subtitle, children, tags = [], image, actions = null, className = "" }) {
+export default function Card({
+  title,
+  subtitle,
+  children,
+  tags = [],
+  image,
+  actions = null,
+  className = ""
+}) {
   return (
     <article className={`card ${className}`}>
-      {image && <img src={image} alt={title} className="card-img" />}
+      {image && <img src={image} alt={title} className="card-img-top" />}
       <div className="card-content">
         {title && <h4 className="card-title">{title}</h4>}
-        {subtitle && <p className="muted card-subtitle">{subtitle}</p>}
+        {subtitle && <p className="card-subtitle">{subtitle}</p>}
         <div className="card-body">{children}</div>
         {tags.length > 0 && (
           <div className="tags">

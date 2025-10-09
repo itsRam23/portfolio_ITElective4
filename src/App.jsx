@@ -1,48 +1,35 @@
-// src/App.jsx
 import React from "react";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Experience from "./components/Experience";
+import ProfileCard from "./components/ProfileCard";
 import Projects from "./components/Projects";
+import Experience from "./components/Experience";
 import Skills from "./components/Skills";
-import Resume from "./components/Resume";
+import Quote from "./components/Quote";
 import Contact from "./components/Contact";
 import "./styles/global.css";
 
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-
 export default function App() {
   return (
-    <div className="app">
+    <div>
       <Header />
-
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Skills />
-        <Resume />
-        <Contact />
-
-        <section className="container" style={{ textAlign: "center", padding: "2rem 0" }}>
-          <h3>Vite + React Starter</h3>
-          <div style={{ display: "flex", gap: "1rem", justifyContent: "center" }}>
-            <a href="https://vite.dev" target="_blank" rel="noreferrer">
-              <img src={viteLogo} className="logo" alt="Vite logo" width={60} />
-            </a>
-            <a href="https://react.dev" target="_blank" rel="noreferrer">
-              <img src={reactLogo} className="logo react" alt="React logo" width={60} />
-            </a>
+      <main className="container">
+        <section
+          id="hero"
+          className="hero container"
+          style={{ display: "flex", gap: "2rem", alignItems: "flex-start" }}
+        >
+          <ProfileCard />
+          <div>
+            <h1>Hi — I'm Rameses</h1>
+            <p className="muted">Aspiring Data Analyst / Junior Developer</p>
           </div>
         </section>
+        <Projects />
+        <Experience />
+        <Skills />
+        <Quote />
+        <Contact />
       </main>
-
-      <footer className="site-footer container">
-        © {new Date().getFullYear()} Rameses Cruz — Aspiring Data Analyst
-      </footer>
     </div>
   );
 }

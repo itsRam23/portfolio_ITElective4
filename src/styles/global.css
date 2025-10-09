@@ -156,3 +156,18 @@ body {
     height: 84px;
   }
 }
+.quote {
+  text-align: center;
+}
+
+.quote .card {
+  margin: 1rem auto;
+  max-width: 600px;
+  justify-content: center;
+}
+
+.quote p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+

@@ -31,7 +31,7 @@ export default function Quote() {
 
   return (
     <section id="quote" className="quote container">
-      <h3>Random Inspiration</h3>
+      <h3>Quote of the day:</h3>
       {loading ? (
         <p>Loading...</p>
       ) : (

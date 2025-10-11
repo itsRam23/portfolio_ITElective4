@@ -31,7 +31,9 @@ export default function Quote() {
 
   return (
     <section id="quote" className="quote container">
-      <h3>Quote of the day:</h3>
+      <h3>Daily Motivation</h3>
+      <h3>A quote that keeps me inspired to learn, 
+        grow, and stay curious.</h3>
       {loading ? (
         <p>Loading...</p>
       ) : (
@@ -41,7 +43,7 @@ export default function Quote() {
         </blockquote>
       )}
       <button className="btn" onClick={fetchQuote} disabled={loading}>
-        New Quote
+        Want a new quote?
       </button>
     </section>
   );

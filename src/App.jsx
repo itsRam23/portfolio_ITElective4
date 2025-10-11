@@ -6,6 +6,7 @@ import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Quote from "./components/Quote";
 import Contact from "./components/Contact";
+import About from "./components/About";
 import "./styles/global.css";
 
 export default function App() {
@@ -13,17 +14,14 @@ export default function App() {
     <div>
       <Header />
       <main className="container">
-        <section
-          id="hero"
-          className="hero container"
-          style={{ display: "flex", gap: "2rem", alignItems: "flex-start" }}
-        >
+        <section id="hero" className="hero container" style={{ display: "flex", gap: "2rem", alignItems: "flex-start" }}>
           <ProfileCard />
           <div>
-            <h1>Hi — I'm Rameses</h1>
-            <p className="muted">Aspiring Data Analyst / Junior Developer</p>
+            <h1></h1>
+            <p className="muted"></p>
           </div>
         </section>
+        <About />
         <Projects />
         <Experience />
         <Skills />

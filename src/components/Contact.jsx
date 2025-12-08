@@ -1,13 +1,13 @@
 import React from "react";
-import { contacts } from "../data/contacts";
 
-export default function Contact() {
+export default function Contact({ contacts }) {
+  const list = Array.isArray(contacts) ? contacts : [];
   return (
     <section id="contact" className="contact container">
       <h3>Contact</h3>
       <p>If you'd like to reach out for OJT, collaborations, or questions:</p>
       <ul className="contact-list">
-        {contacts.map((c) => (
+        {list.map((c) => (
           <li key={c.id}>
             {c.href ? <a href={c.href}>{c.value}</a> : c.value}
           </li>

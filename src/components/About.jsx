@@ -1,19 +1,16 @@
-// src/components/About.jsx
 import React from "react";
 
-export default function About() {
+export default function About({ about }) {
+  const paragraphs = about && Array.isArray(about.paragraphs) ? about.paragraphs : [];
+  const education = about && about.education;
   return (
     <section id="about" className="about container">
       <div className="card">
         <h3>About</h3>
-        <p>
-          I’m currently a fourth-year BSIT student focused on applied data analysis and practical tools for working with datasets.
-          I use Excel and Access extensively, and I’m building skills in SQL and Power BI to create dashboards and reports.
-        </p>
-
-        <p className="small">
-          Education: Bachelor of Science in Information Technology — La Consolacion University Philippines. Expected graduation: 2026.
-        </p>
+        {paragraphs.map((text, index) => (
+          <p key={index}>{text}</p>
+        ))}
+        {education && <p className="small">{education}</p>}
       </div>
     </section>
   );

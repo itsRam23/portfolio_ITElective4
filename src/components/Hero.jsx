@@ -1,20 +1,16 @@
 import React from "react";
 import ProfileCard from "./ProfileCard";
 
-export default function Hero() {
+export default function Hero({ hero, profile }) {
+  const heading = hero && hero.heading ? hero.heading : "Portfolio";
+  const line1 = hero && hero.line1 ? hero.line1 : "";
+  const line2 = hero && hero.line2 ? hero.line2 : "";
   return (
     <section id="hero" className="hero container">
-      <h1>Hello, I’m Rameses Soraya A. Cruz</h1>
-      <p className="muted">
-        Aspiring Data Analyst · Fourth-Year BSIT Student. 
-        I turn messy data into clear stories — strong with Excel & Access; learning SQL and Power BI.
-      </p>
-      <p className="muted">
-        Malolos City, Bulacan · <a href="tel:09668470711">0966-847-0711</a> ·{" "}
-        <a href="mailto:ramcruz.mail@gmail.com">ramcruz.mail@gmail.com</a>
-      </p>
-
-      <ProfileCard caption="Aspiring Data Analyst • Available OJT Jan 2026" />
+      <h1>{heading}</h1>
+      {line1 && <p className="muted">{line1}</p>}
+      {line2 && <p className="muted">{line2}</p>}
+      <ProfileCard name={profile && profile.name} caption={profile && profile.caption} imageUrl={profile && profile.imageUrl} />
     </section>
   );
 }
